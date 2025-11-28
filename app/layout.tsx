@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Oicho-Kabu - Traditional Japanese Card Game",
-  description: "Play Oicho-Kabu, a traditional Japanese banking game similar to Baccarat, using Hanafuda cards",
+  title: "Sente-Kabu - Hanafuda Card Game",
+  description: "Play Sente-Kabu, a spin-off of Oicho-Kabu, a traditional Japanese banking game using Hanafuda cards",
 };
 
 export default function RootLayout({

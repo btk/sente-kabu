@@ -1,16 +1,16 @@
 // Oicho-Kabu game logic
 
-// Card values: January (1) through October (10)
-// We exclude November and December to get 40 cards
+// Card values: January (1) through December (12)
+// Full Hanafuda deck with 48 cards
 export const MONTHS = [
   'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October'
+  'July', 'August', 'September', 'October', 'November', 'December'
 ];
 
-// Create a deck of 40 cards (4 cards per month, 10 months)
+// Create a deck of 48 cards (4 cards per month, 12 months)
 export function createDeck() {
   const deck = [];
-  for (let month = 1; month <= 10; month++) {
+  for (let month = 1; month <= 12; month++) {
     for (let card = 0; card < 4; card++) {
       deck.push({
         month: month,
