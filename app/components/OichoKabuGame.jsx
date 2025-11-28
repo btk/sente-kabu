@@ -271,61 +271,6 @@ export default function OichoKabuGame() {
           </div>
         </div>
 
-        {/* Game Description */}
-        <div className="mb-8 bg-black/40 backdrop-blur-sm rounded-2xl p-6 border-2 border-yellow-400/30 shadow-2xl">
-          <h2 className="text-2xl font-bold text-yellow-300 mb-4 text-center">How to Play Sente-Kabu</h2>
-          <div className="text-white/90 space-y-4 text-sm leading-relaxed">
-            <p className="text-center text-yellow-200/90 italic mb-4">
-              Sente-Kabu is a spin-off of the traditional Japanese banking game Oicho-Kabu, played with a full Hanafuda deck.
-            </p>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="text-yellow-300 font-bold text-lg mb-2">🎯 Objective</h3>
-                <p>
-                  Get a hand total whose <strong>last digit</strong> is as close to 9 as possible. 
-                  Only the last digit counts (e.g., 15 = 5, 23 = 3, 9 = 9).
-                </p>
-              </div>
-              
-              <div>
-                <h3 className="text-yellow-300 font-bold text-lg mb-2">🃏 The Deck</h3>
-                <p>
-                  Uses a full Hanafuda deck with <strong>48 cards</strong> (12 months × 4 cards each). 
-                  Each card's value equals its month number (1-12).
-                </p>
-              </div>
-              
-              <div>
-                <h3 className="text-yellow-300 font-bold text-lg mb-2">🎲 Gameplay</h3>
-                <ol className="list-decimal list-inside space-y-1 ml-2">
-                  <li><strong>Place your bet</strong> using the betting buttons</li>
-                  <li><strong>Click "Deal Cards"</strong> to start the round</li>
-                  <li><strong>Click the deck</strong> to draw cards (3 cards total: you, dealer, you)</li>
-                  <li><strong>Optional:</strong> Click the deck again to draw a third card (you can always choose!)</li>
-                  <li><strong>Click "Finalize"</strong> when ready - dealer plays automatically</li>
-                </ol>
-              </div>
-              
-              <div>
-                <h3 className="text-yellow-300 font-bold text-lg mb-2">💰 Payouts</h3>
-                <ul className="list-disc list-inside space-y-1 ml-2">
-                  <li><strong className="text-green-400">Win:</strong> Get your bet back + equal amount (2× bet)</li>
-                  <li><strong className="text-yellow-400">Draw:</strong> Get your bet back (push)</li>
-                  <li><strong className="text-red-400">Lose:</strong> Dealer wins your bet</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="mt-4 pt-4 border-t border-yellow-400/20">
-              <p className="text-center text-yellow-200/80">
-                <strong>Tip:</strong> In Sente-Kabu, you have full control! You can choose to draw a third card 
-                regardless of your score, giving you more strategic options than traditional Oicho-Kabu.
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div className="flex gap-8 items-start">
           {/* Deck - Left Side */}
           <div className="flex-shrink-0">
@@ -548,6 +493,61 @@ export default function OichoKabuGame() {
               🔄 New Round
             </button>
           )}
+        </div>
+
+        {/* Game Description */}
+        <div className="mt-12 mb-8 bg-black/40 backdrop-blur-sm rounded-2xl p-6 border-2 border-yellow-400/30 shadow-2xl">
+          <h2 className="text-2xl font-bold text-yellow-300 mb-4 text-center">How to Play Sente-Kabu</h2>
+          <div className="text-white/90 space-y-4 text-sm leading-relaxed">
+            <p className="text-center text-yellow-200/90 italic mb-4">
+              Sente-Kabu is a spin-off of the traditional Japanese banking game Oicho-Kabu, played with a full Hanafuda deck.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="text-yellow-300 font-bold text-lg mb-2">🎯 Objective</h3>
+                <p>
+                  Get a hand total whose <strong>last digit</strong> is as close to 9 as possible. 
+                  Only the last digit counts (e.g., 15 = 5, 23 = 3, 9 = 9).
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-yellow-300 font-bold text-lg mb-2">🃏 The Deck</h3>
+                <p>
+                  Uses a full Hanafuda deck with <strong>48 cards</strong> (12 months × 4 cards each). 
+                  Each card's value equals its month number (1-12).
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-yellow-300 font-bold text-lg mb-2">🎲 Gameplay</h3>
+                <ol className="list-decimal list-inside space-y-1 ml-2">
+                  <li><strong>Place your bet</strong> using the betting buttons</li>
+                  <li><strong>Click "Deal Cards"</strong> to start the round</li>
+                  <li><strong>Click the deck</strong> to draw cards (3 cards total: you, dealer, you)</li>
+                  <li><strong>Optional:</strong> Click the deck again to draw a third card (you can always choose!)</li>
+                  <li><strong>Click "Finalize"</strong> when ready - dealer plays automatically</li>
+                </ol>
+              </div>
+              
+              <div>
+                <h3 className="text-yellow-300 font-bold text-lg mb-2">💰 Payouts</h3>
+                <ul className="list-disc list-inside space-y-1 ml-2">
+                  <li><strong className="text-green-400">Win:</strong> Get your bet back + equal amount (2× bet)</li>
+                  <li><strong className="text-yellow-400">Draw:</strong> Get your bet back (push)</li>
+                  <li><strong className="text-red-400">Lose:</strong> Dealer wins your bet</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="mt-4 pt-4 border-t border-yellow-400/20">
+              <p className="text-center text-yellow-200/80">
+                <strong>Tip:</strong> In Sente-Kabu, you have full control! You can choose to draw a third card 
+                regardless of your score, giving you more strategic options than traditional Oicho-Kabu.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
