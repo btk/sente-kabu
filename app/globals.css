@@ -24,3 +24,59 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes cardDraw {
+  0% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flyToPlayer {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(400px, 200px) scale(1.1) rotate(180deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(600px, 300px) scale(1) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flyToDealer {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(400px, -200px) scale(1.1) rotate(180deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(600px, -300px) scale(1) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-card-draw {
+  animation: cardDraw 0.3s ease-out;
+}
+
+.animate-fly-to-player {
+  animation: flyToPlayer 0.6s ease-in-out forwards;
+}
+
+.animate-fly-to-dealer {
+  animation: flyToDealer 0.6s ease-in-out forwards;
+}
